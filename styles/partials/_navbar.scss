@@ -1,0 +1,105 @@
+header{
+    .nav{
+        position: relative;
+        display: flex;
+        box-shadow: 0 0.3rem  0.5rem rgba(0,0,0,0.4);
+        justify-content: space-between;
+        padding: .9rem 2rem;
+        width: 100%;
+        position:fixed;
+        z-index: 2000;
+        backdrop-filter: blur(12px);
+
+        .progressbar{
+            position: absolute;
+            content: '';
+            width: 10rem;
+            height: .3rem;
+            bottom: 0;
+            left: 0;
+            background-color: $primarycolor;
+
+        }
+        &__links{
+            display: flex;
+            gap: 1rem;
+            li{
+                transition: 400ms ease;
+                
+                a{
+                    position:relative;
+                    color:$primarycolorvariant;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+                &.active{
+                        &::after{
+                            position: absolute;
+                            width: 100%;
+                            content: '';
+                            height: .3rem;
+                            background: $primarycolor;
+                            left: 0;
+                            bottom: -0.6rem;
+                        }
+                }
+
+            }
+
+        }
+        #open__menu,#close_menu{
+            display: none;
+            margin-right: 3rem;
+            cursor: pointer;
+
+        }
+    }
+}
+
+@include tablets{
+    header{
+        .nav{
+            &__links{
+                gap: 0;
+                position: absolute;
+                right:2rem;
+                flex-direction: column;
+                display: none;
+                top: 5rem;
+                li{
+                    background: $primarycolor;
+                    padding: 1rem 2rem;
+                    animation:flipmenu 100ms ease forwards;
+
+                    &:nth-child(2){
+                        animation-delay: 200ms;
+                    }
+                    &:nth-child(3){
+                        animation-delay: 300ms;
+                    }
+                    &:nth-child(4){
+                        animation-delay: 400ms;
+                    }
+                    &:nth-child(5){
+                        animation-delay: 500ms;
+                    }
+                    @keyframes flipmenu {
+                        from{
+                            transform:  rotateY(90deg);
+                            transform-origin: top;
+                        }
+                        to{
+                            transform: rotateY(0);
+                        }
+                    }
+                }
+            }
+            #open__menu{
+                display:block;
+            } 
+            #close_menu{
+                display: none;
+            }
+        }
+    }
+}

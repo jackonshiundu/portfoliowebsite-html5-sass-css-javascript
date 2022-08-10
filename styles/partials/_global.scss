@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    transition: all 400ms ease;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+button{
+    background: transparent;
+
+}
+.btn{
+    padding: .6rem 1rem;
+    color: $white;
+    background:$primarycolor;
+    cursor: pointer;
+}
+section{
+    width:95%;
+}
+.heading{
+    color: $primarycolor;
+    position: relative;
+    margin-bottom: 3rem;
+    width: fit-content;
+    text-align: center;
+    &::before{
+        content: '';
+        width: 100%;
+        height: .2rem;
+        background: $primarycolor;
+        position: absolute;
+        left: 0;
+        bottom: -0.6rem;
+    }
+}

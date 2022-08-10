@@ -1,0 +1,41 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    .about{
+        display: flex;
+        gap: 3rem;
+        &__rightpart{
+            margin-left: 5rem;
+            width:40%;
+            height: 70%;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &__leftpart{
+            width: 50%;
+            h2{
+                margin-bottom: 2rem;
+            }
+        }   
+    }
+}
+@include tablets{
+    #about{
+        .about{
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+
+            .about__rightpart{
+                left: 40%;
+                transform: translateX(-15%);
+            }
+        }
+    }
+}

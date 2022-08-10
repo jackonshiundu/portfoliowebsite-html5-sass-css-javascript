@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="progressbar"></div>
+            <div class="nav__logo">
+                <h2>Samba</h2>
+            </div>
+                <ul class="nav__links ">
+                    <li ><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skill</a></li>
+                    <li><a href="#work">Work </a></li>
+                    <li><a href="#Contact">Contact </a></li>
+                </ul>
+           <button id="open__menu"><i class="fa fa-bars"></i></button> 
+           <button id="close_menu"><i class="fa fa-times"></i></button>       
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero__leftpart">
+            <h1>Hello,</h1>
+            <div>
+                <h1>I am </h1>
+                <span>Samba</span>
+            </div>
+            <h1>Front End Developer</h1>
+            <button class="btn">Contact</button>
+        </div>
+        <div class="hero__rightpart">
+            <div class="image__wrapper">
+                <img src="./assets/me.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="heading">About</h1>
+
+        <div class="about">
+            <div class="about__rightpart">
+                <img src="./assets/me-about.jpg" alt="">
+            </div>
+            <div class="about__leftpart">
+                <h2>I am Samba</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum eos dolorem earum aut illum corrupti, magni eligendi totam necessitatibus commodi? Placeat architecto officia sint porro error officiis atque? Reprehenderit!</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="heading">Skills</h1>
+        <div class="row__wrapper">
+            <div class="left__part">
+                <h2>Proffesional skills</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, ratione?</p>
+                <div class="languages__wrapper">
+                    <div class="language__progress">
+                        <h3>HTML5</h3>
+                        <h3>95%</h3>
+                        <div class="HTML5">
+
+                        </div>
+                    </div>
+                    <div class="language__progress">
+                        <h3>Javascript</h3>
+                        <h3>85%</h3>
+                        <div class="Javascript">
+
+                        </div>
+                     </div>
+                    <div class="language__progress">
+                        <h3>CSS</h3>
+                        <h3>83%</h3>
+                        <div class="CSS">
+
+                        </div>
+                    </div>
+                    <div class="language__progress">
+                        <h3>React</h3>
+                        <h3>84%</h3>
+                        <div class="React">
+
+                        </div>
+                    </div>
+                    <div class="language__progress">
+                        <h3>Tailwind</h3>
+                        <h3>80%</h3>
+                        <div class="Tailwind">
+
+                        </div>
+                    </div>
+                    <div class="language__progress">
+                        <h3>Bootsrap</h3>
+                        <h3>85%</h3>
+                        <div class="Bootstrap">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right__part">
+                <div class="image__wrapper">
+
+                    <img src="./assets/work3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work">
+        <h1 class="heading">Work</h1>
+        <div class="row__imageswrapper">
+            <article class="image__wrapper">
+                <img src="./assets/work1.jpg" alt="">
+                <div class="details">
+                    <p>Movil</p>
+                    <h1>Food App dev</h1>
+                    <div class="fa fa-circle"></div>
+                </div>
+            </article>
+            <article class="image__wrapper">
+                <img src="./assets/work2.jpg" alt="">
+                <div class="details">
+                    <p>Design</p>
+                    <h1>Travel App</h1>
+                    <div class="fa fa-circle"></div>
+                </div>
+            </article>
+            <article class="image__wrapper">
+                <img src="./assets/work3.jpg" alt="">
+                <div class="details">
+                    <p>Movil</p>
+                    <h1>Music app design</h1>
+                    <div class="fa fa-circle"></div>
+                </div>
+            </article>
+            <article class="image__wrapper">
+                <img src="./assets/work4.jpg" alt="">
+                <div class="details">
+                    <p>Movil</p>
+                    <h1>Food App dev</h1>
+                    <div class="fa fa-circle"></div>
+                </div>
+            </article>
+            <article class="image__wrapper">
+                <img src="./assets/work5.jpg" alt="">
+                <div class="details">
+                    <p>Movil</p>
+                    <h1>Food App dev</h1>
+                    <div class="fa fa-circle"></div>
+                </div>
+            </article>
+            <article class="image__wrapper">
+                <img src="./assets/work6.jpg" alt="">
+                <div class="details">
+                    <p>Movil</p>
+                    <h1>Food App dev</h1>
+                    <div class="fa fa-circle"></div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="Contact">
+       <h1 class="heading">Contact</h1>
+           <form action="">
+              <input type="name" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <textarea name="" id="" cols="30" rows="10"  placeholder="Message"></textarea>
+              <button type="submit" class="btn">Send</button>
+           </form>
+    </section>
+    <footer>
+        <h1>Samba</h1>
+        <p> &copy; samba.All  Rights Reserved</p>
+    </footer>
+    <script src="./app/main.js"></script>
+</body>
+</html>
